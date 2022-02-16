@@ -1,0 +1,179 @@
+.sell {
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Sell HEader Section */
+.sell .sell-header-section {
+    width: 50%;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.sell .sell-header-section p {
+    color: #777;
+    font-family: sans-serif;
+    letter-spacing: .4px;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+/* Sell Items Section */
+.sell .sell-items-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 0 60px;
+    z-index: 2;
+}
+
+.sell .sell-items-section .sell-item {
+    background-color: #3107C1;
+    border-radius: 8px;
+    padding: 20px 30px;
+    display: flex;
+}
+
+.sell .sell-items-section .sell-item .sell-item-desc {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sell .sell-items-section .sell-item .sell-item-desc h3 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.sell .sell-items-section .sell-item .sell-item-desc p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #eee;
+}
+
+.sell .sell-items-section .sell-item .sell-item-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sell .sell-items-section .sell-item .sell-item-img img {
+    width: 70%;
+}
+
+/* Lights */
+/* Light -> top-left */
+.light.sell-top-left {
+    left: -50px;
+    top: 8%;
+    width: 200px;
+}
+
+/* Light -> top-middle */
+.light.sell-top-middle {
+    left: 550px;
+    top: 23%;
+    width: 200px;
+}
+
+/* Light -> bottom-right */
+.light.sell-bottom-right {
+    right: 100px;
+    bottom: 5%;
+    width: 200px;
+}
+
+/* Light -> bottom-left */
+.light.sell-bottom-left {
+    left: 300px;
+    bottom: -10%;
+    width: 200px;
+}
+
+/* Dots */
+/* Dots -> top-left */
+.dots.sell-top-left {
+    left: 30px;
+    top: 20%;
+}
+
+/* Dots -> bottom-right */
+.dots.sell-bottom-right {
+    right: 30px;
+    bottom: 0%;
+    transform: rotate(90deg);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .sell .sell-items-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sell .sell-header-section {
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    /* Dots -> top-left */
+    .dots.sell-top-left {
+        top: -2%;
+        left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sell .sell-items-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Light -> top-left */
+    .light.sell-top-left {
+        left: -50px;
+        top: 0%;
+        width: 200px;
+    }
+
+    /* Light -> bottom-left */
+    .light.sell-bottom-left {
+        left: 400px;
+        bottom: -10%;
+        width: 200px;
+    }
+
+    /* Dots -> top-left */
+    .dots.sell-top-left {
+        top: -2%;
+        left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sell {
+        padding: 0 50px;
+    }
+
+    .sell .sell-header-section {
+        width: 100%;
+    }
+
+    /* Dots -> top-left */
+    .dots.sell-top-left {
+        top: -5%;
+        left: -40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sell {
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="398" height="341" viewBox="0 0 398 341">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a6a9a"/>
+      <stop offset="0" stop-color="#231dd5" stop-opacity="0.741"/>
+      <stop offset="1" stop-color="#000013" stop-opacity="0.22"/>
+    </radialGradient>
+  </defs>
+  <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="199" cy="170.5" rx="199" ry="170.5" fill="url(#radial-gradient)"/>
+</svg>

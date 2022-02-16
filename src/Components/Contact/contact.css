@@ -1,0 +1,165 @@
+.contact {
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* Contact Header */
+.contact .contact-header {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.contact .contact-header p {
+    color: #777;
+    font-family: sans-serif;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+
+/* Contact Main Section */
+.contact .contact-main {
+    background-color: #2C08A5;
+    margin: 50px 200px;
+    border-radius: 7px;
+    padding: 50px 25px 20px 25px;
+    z-index: 2;
+}
+
+.contact .name-mail-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .name-mail-section .seperator {
+    width: 10px;
+}
+
+.contact .name-mail-section input {
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+}
+
+.contact .message-section textarea {
+    width: 97%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.contact .contact-main button {
+    background-color: #6454FF;
+    border: none;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+}
+
+/* Lights */
+/* Lights -> top-left */
+.light.contact-top-left {
+    top: 6%;
+    left: 200px;
+    width: 200px;
+}
+
+/* Lights -> bottom-right */
+.light.contact-bottom-right {
+    bottom: 15%;
+    right: 170px;
+    width: 200px;
+}
+
+/* Dots */
+/* Dots -> top-left */
+.dots.contact-top-left {
+    left: -20px;
+    transform: rotate(90deg);
+    top: 2%;
+}
+
+/* Dots -> bottom-right */
+.dots.contact-bottom-right {
+    right: 50px;
+    bottom: -5%;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+    /* Contact Main Section */
+    .contact .contact-main {
+        margin: 50px 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Contact Main Section */
+    .contact .contact-main {
+        margin: 50px;
+        padding: 50px 25px 20px 25px;
+    }
+
+    .contact .contact-header {
+        width: 70%;
+    }
+
+    .contact .message-section textarea {
+        width: 96%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Contact Main Section */
+    .contact .contact-main {
+        margin: 50px 25px;
+    }
+
+    .contact .message-section textarea {
+        width: 96%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 0 50px;
+    }
+
+    .contact .contact-header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        padding: 0 30px;
+    }
+
+    /* Dots -> bottom-right */
+    .dots.contact-bottom-right {
+        right: -20px;
+        bottom: -5%;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact .contact-header {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,124 @@
+.services {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+
+/* Services Header */
+.services .service-header {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 50px;
+    z-index: 2;
+}
+
+.services .service-header p {
+    color: #777;
+    font-family: sans-serif;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+/* Services Items */
+.services .service-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 50px;
+    z-index: 2;
+}
+
+.services .service-items .service-item {
+    background-color: #3107C1;
+    padding: 20px 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.services .service-items .service-item img {
+    height: 70px;
+}
+
+.services .service-items .service-item h3 {
+    margin: 0;
+    padding-top: 8px;
+}
+
+.services .service-items .service-item p {
+    color: #ddd;
+    font-family: sans-serif;
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Lights */
+/* Light -> top-right */
+.light.service-top-right {
+    width: 200px;
+    top: 13%;
+    right: 350px;
+}
+
+/* Light -> bottom-left */
+.light.service-bottom-left {
+    width: 200px;
+    bottom: -7%;
+    left: 200px;
+}
+
+/* Dots */
+/* Dots -> top-left  */
+.dots.service-top-left {
+    top: 5%;
+    left: -24px;
+    transform: rotate(90deg);
+}
+
+/* Dots -> bottom-right  */
+.dots.service-bottom-right {
+    bottom: 14%;
+    right: -24px;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    /* Services Items */
+    .services .service-items {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 50px;
+    }
+
+    .services .service-header {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Services Items */
+    .services .service-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        padding: 0 50px;
+    }
+
+    .services .service-header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .services {
+        padding: 0 30px;
+    }
+}
